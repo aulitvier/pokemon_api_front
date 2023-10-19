@@ -26,14 +26,25 @@ getPokemon = async () => {
     image_back.src = pokemon_sprites_back;
     image_front.src = pokemon_sprites_front;
     h3_id.textContent = `# ${index}`;
+
+    // modifications du CSS
     h3_id.style.textAlign = "center"
     p_name.style.fontWeight = "bold"
     p_name.style.textAlign = "center"
     image_front.style.textAlign = "center"
     image_back.style.textAlign = "center"
+    image_back.style.width = "200px"
+    image_back.style.height = "200px"
+    image_front.style.width = "200px"
+    image_front.style.height = "200px"
     div_image.style.display = "flex"
     div_image.style.justifyContent = "center"
-    div_image.style.height = "200px"
+    div_image.style.alignItems = "center"
+    div_image.style.margin = "auto"
+    div_image.style.backgroundColor = "#ED7D30"
+    div_image.style.height = "300px"
+    div_image.style.width = "500px"
+    
     // ajout des balise dans le body
     
     div_image.appendChild(image_front);
